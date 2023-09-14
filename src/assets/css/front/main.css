@@ -1,0 +1,151 @@
+:root{
+  --color-red: #E40505;
+  --color-pink: #e0afa0;
+  --color-white: #ffffff;
+  --color-black: #32302c;
+  --color-grey66: #666666;
+  --color-grey9f: #9f9f9f;
+  --color-greyD4: #d4d4d4;
+  --color-greyE9: #e9e9e9;
+  --color-greyF7: #f7f7f7;
+  --color-brown: #AC9E91;
+  --color-brownDeep: #A78667;
+  --color-brownLight: #F1ECE8;
+  --color-brown5f: #997b5f;
+}
+*{
+  font-family: Montserrat, andy-money, Noto Sans, Mitr, Athiti, Noto Sans TC, Noto Sans SC, system-ui, -apple-system, Segoe UI, sans-serif;
+}
+a,.nav-link{
+  color: var(--color-grey66);
+}
+a:hover,
+.nav-link:hover{
+  color: var(--color-brownDeep);
+}
+:focus,
+:focus-visible {
+  outline: none;
+}
+.btn-check:focus+.btn,
+.btn:focus{box-shadow:none;}
+/* 按鈕 邊框式*/
+.btn-outline-brownDeep{
+  color: var(--color-brownDeep);
+  border-color: var(--color-brownDeep);
+}
+.btn-outline-brownDeep:hover{
+  border-color: var(--color-brownDeep);
+  background-color: var(--color-brownDeep);
+  color: var(--color-white);
+}
+.btn-check:active+.btn-outline-brownDeep, .btn-check:checked+.btn-outline-brownDeep, .btn-outline-brownDeep.active, .btn-outline-brownDeep.dropdown-toggle.show, .btn-outline-brownDeep:active{
+  border-color: var(--color-brownDeep);
+  background-color: var(--color-brownDeep);
+}
+
+/* 按鈕 背景式 */
+.btn-brownDeep{
+  color: var(--color-white);
+  border-color: var(--color-brownDeep);
+  background-color: var(--color-brownDeep);
+}
+.btn-check:focus+.btn-brownDeep, .btn-brownDeep:focus{
+  color: var(--color-white);
+  border-color: var(--color-brownDeep);
+  background-color: var(--color-brownDeep);
+}
+.btn-brownDeep:hover{
+  color: var(--color-white);
+  border-color: var(--color-brown5f);
+  background-color: var(--color-brown5f);
+}
+.discountAlert{
+  z-index: 99;
+  top: 0;
+  background-color: var(--color-brown);
+}
+.header{
+  z-index: 99;
+  top: 40px;
+}
+.labelIcon{
+  padding: 4px 16px;
+  letter-spacing: 1px;
+  background-color: var(--color-brown);
+  color: var(--color-white);
+  font-size: .8rem;
+}
+.footer{
+  background-color: var(--color-brownLight);
+  color: var(--color-grey66);
+}
+.footerContent{
+  border-bottom: 1px solid var(--color-greyD4);
+}
+.footer .payItem li{
+  width: 2.8rem;
+  height: 2rem;
+}
+.footer .payItem i{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  transition: background-image .5s;
+}
+.footer .payItem i.visa{background-image: url('../images/icon/pay/visa_off.svg');}
+.footer .payItem i.mc{background-image: url('../images/icon/pay/mc_off.svg');}
+.footer .payItem i.jcb{background-image: url('../images/icon/pay/jcb_off.svg');}
+.footer .payItem i.up{background-image: url('../images/icon/pay/up_off.svg');}
+.footer .payItem i.pp{background-image: url('../images/icon/pay/pp_off.svg');}
+.footer .payItem i.ec{background-image: url('../images/icon/pay/ec_off.png');}
+
+.footer .payItem i.visa:hover{background-image: url('../images/icon/pay/visa_on.svg');}
+.footer .payItem i.mc:hover{background-image: url('../images/icon/pay/mc_on.svg');}
+.footer .payItem i.jcb:hover{background-image: url('../images/icon/pay/jcb_on.svg');}
+.footer .payItem i.up:hover{background-image: url('../images/icon/pay/up_on.svg');}
+.footer .payItem i.pp:hover{background-image: url('../images/icon/pay/pp_on.svg');}
+.footer .payItem i.ec:hover{background-image: url('../images/icon/pay/ec_on.png');}
+
+.productTitle{
+  color: var(--color-brown);
+}
+/* 分頁按鈕 */
+.page-link{
+  color: var(--color-grey66);
+  padding: 0.5rem 0.925rem;
+}
+.active>.page-link,
+.page-link.active{
+  background-color: var(--color-brownDeep);
+  border-color: var(--color-brownDeep);
+  color: var(--color-white);
+}
+.page-link:hover{
+  background-color: var(--color-brownDeep);
+  border-color: var(--color-brownDeep);
+  color: var(--color-white);
+}
+.page-link:focus{
+  background-color: var(--color-brownDeep);
+  border-color: var(--color-brownDeep);
+  color: var(--color-white);
+  box-shadow: 0 0 0 0.25rem var(--color-brownLight);
+}
+.pageTop{
+  right: 1rem;
+  bottom: 3rem;
+}
+@media (max-width: 576px) { 
+  .pageTop{
+      bottom: 6rem;
+  }
+}
+/* 文字縮排 */
+.indent-2{
+  padding-left: 2em;
+}
+.breadcrumb{
+  background-color: var(--color-greyE9);
+  font-size: .8rem;
+}

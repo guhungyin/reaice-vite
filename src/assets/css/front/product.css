@@ -1,0 +1,79 @@
+@import url('./main.css');
+
+.slick-arrow{
+  border-radius: 50%;
+  transform: translate(0,-50%);
+  top: 50%;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+.slick-arrow.slick-prev{
+  left: -1%;
+}
+.slick-arrow.slick-next{
+  right: -1%;
+}
+.productImg img{
+  border-radius: 1rem;
+}
+.relatedProductSlick .slick-dots{
+  margin-top: 2rem;
+}
+/* 加入購物車icon + 加入收藏icon */
+.ic_cart{
+  background: url('../images/icon/ic_cart_brown.svg') no-repeat center center / contain;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+.btn:hover .ic_cart{
+  background: url('../images/icon/ic_cart_white.svg') no-repeat center center / contain;
+}
+
+.ic_like{
+  background: url('../images/icon/ic_like_brown.svg') no-repeat center center / contain;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+.btn:hover .ic_like{
+  background: url('../images/icon/ic_like_white.svg') no-repeat center center / contain;
+}
+/* 商品介紹 */
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+  color: var(--color-brownDeep);
+  border-color: var(--color-white) var(--color-white) var(--color-brownDeep);
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+  border-color: var(--color-white) var(--color-white) var(--color-brownDeep);
+}
+
+.productBtn{
+  opacity: 1;
+  transition: .3s;
+  bottom: 2%;
+  width: 7%;
+  top: initial;
+}
+.carousel-control-prev{
+  right: 13%;
+  left: initial;
+}
+.carousel-control-next{
+  right: 3%;
+}
+/* .productBtn:hover{
+}
+
+.carousel-control-next{
+  
+  left: 48px;
+  right: initial;}
+
+.carousel-control-prev-icon{
+  width: 100%;
+  height: 100%;
+  background: url('../images/icon/ic_left_black.svg') no-repeat center center / contain;}
+.carousel-control-next-icon{
+  width: 100%;
+  height: 100%;
+  background: url('../images/icon/ic_right_black.svg') no-repeat center center / contain;} */

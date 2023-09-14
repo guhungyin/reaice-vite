@@ -1,0 +1,38 @@
+{
+  "name": "reaice-vite",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "format": "prettier --write src/"
+  },
+  "dependencies": {
+    "@vee-validate/i18n": "^4.11.6",
+    "@vee-validate/rules": "^4.11.6",
+    "aos": "^2.3.4",
+    "axios": "^1.5.0",
+    "bootstrap": "^5.3.1",
+    "pinia": "^2.1.6",
+    "sass": "^1.67.0",
+    "vee-validate": "^4.11.6",
+    "vue": "^3.3.4",
+    "vue-axios": "^3.5.2",
+    "vue-easy-lightbox": "^1.16.0",
+    "vue-i18n": "^9.4.0",
+    "vue-loading-overlay": "^6.0.3",
+    "vue-router": "^4.2.4",
+    "vue3-toastify": "^0.1.12"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.3.2",
+    "@vitejs/plugin-vue": "^4.3.1",
+    "@vue/eslint-config-prettier": "^8.0.0",
+    "eslint": "^8.46.0",
+    "eslint-plugin-vue": "^9.16.1",
+    "prettier": "^3.0.0",
+    "vite": "^4.4.9"
+  }
+}
