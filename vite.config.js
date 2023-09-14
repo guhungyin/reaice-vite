@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
-  base: "/reaice/",
+  base: "/reaice-vite/",
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
