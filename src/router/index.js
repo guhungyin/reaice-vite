@@ -56,6 +56,7 @@ const routers = [
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
   routers,
+  routes: routers,
   linkActiveClass: "active",
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
