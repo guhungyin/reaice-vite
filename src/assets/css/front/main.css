@@ -25,6 +25,7 @@ a:hover,
 }
 :focus,
 :focus-visible {
+  color: var(--color-brownDeep) !important;
   outline: none;
 }
 .btn-check:focus+.btn,
@@ -146,6 +147,5 @@ a:hover,
   padding-left: 2em;
 }
 .breadcrumb{
-  background-color: var(--color-greyE9);
   font-size: .8rem;
 }

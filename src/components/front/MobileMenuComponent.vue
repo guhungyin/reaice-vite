@@ -1,5 +1,4 @@
 <template>
-  <div>
     <section>
       <div class="offcanvas offcanvas-end mobileMenu" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
@@ -33,5 +32,4 @@
         </div>
       </div>
     </section>
-  </div>
 </template>

@@ -1,47 +1,152 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
+// 版型
 import FrontView from '../views/front/FrontView.vue'
+// 首頁
 import IndexView from '../views/front/index/IndexView.vue'
+// 公司資訊
 import BrandView from '../views/front/companyFolder/BrandView.vue'
 import CollaborationView from '../views/front/companyFolder/CollaborationView.vue'
 import CompanyProfileView from '../views/front/companyFolder/CompanyProfileView.vue'
-import ProductMaintenanceView from '../views/front/companyFolder/ProductMaintenanceView.vue'
 import WhereBuyView from '../views/front/companyFolder/WhereBuyView.vue'
+// 服務
+import PrivacyPolicyView from '../views/front/serviceFolder/PrivacyPolicyView.vue'
+import ProductsMaintenanceView from '../views/front/serviceFolder/ProductsMaintenanceView.vue'
+import ReturnView from '../views/front/serviceFolder/ReturnView.vue'
+import TosView from '../views/front/serviceFolder/TosView.vue'
+// 產品
+import ProductsView from '../views/front/productFolder/ProductsView.vue'
+import ProductView from '../views/front/productFolder/ProductView.vue'
+// 文章
+import KnowledgeArticlesView from '../views/front/articlesFolder/KnowledgeArticlesView.vue'
+import KnowledgeArticleView from '../views/front/articlesFolder/KnowledgeArticleView.vue'
+import KolArticlesView from '../views/front/articlesFolder/KolArticlesView.vue'
+import KolArticleView from '../views/front/articlesFolder/KolArticleView.vue'
+// 404
 import NotFoundView from '../views/NotFoundView.vue'
 
-const routers = [
+const routes = [
   {
     path: '/',
     component: FrontView,
     children: [
       {
         path: "",
-        name: "index",
+        name: "Index",
         component: IndexView,
       },
       {
-        path: "brand",
-        name: "brand",
+        path: "Brand",
+        name: "Brand",
         component: BrandView,
       },
       {
-        path: "collaboration",
-        name: "collaboration",
+        path: "Collaboration",
+        name: "Collaboration",
         component: CollaborationView,
       },
       {
-        path: "companyProfile",
-        name: "companyProfile",
+        path: "CompanyProfile",
+        name: "CompanyProfile",
         component: CompanyProfileView,
       },
       {
-        path: "productMaintenance",
-        name: "productMaintenance",
-        component: ProductMaintenanceView,
+        path: "WhereBuy",
+        name: "WhereBuy",
+        component: WhereBuyView,
+      },
+
+      {
+        path: "PrivacyPolicy",
+        name: "PrivacyPolicy",
+        component: PrivacyPolicyView,
+      },
+      
+      {
+        path: "ProductsMaintenance",
+        name: "ProductsMaintenance",
+        component: ProductsMaintenanceView,
       },
       {
-        path: "whereBuy",
-        name: "whereBuy",
-        component: WhereBuyView,
+        path: "Return",
+        name: "Return",
+        component: ReturnView,
+      },
+      {
+        path: "Tos",
+        name: "Tos",
+        component: TosView,
+      },
+      {
+        path: "Products",
+        name: "Products",
+        component: ProductsView,
+      },
+      {
+        path: "Product/:id",
+        name: "Product/:id",
+        component: ProductView,
+        meta: {
+          breadcrumb: [
+            {
+              name: "首頁",
+              enName: "Home",
+              link: "/",
+            },
+            {
+              name: "產品目錄",
+              enName: "Products",
+              link: "/Products",
+            },
+          ],
+        },
+      },
+      {
+        path: "KnowledgeArticles",
+        name: "KnowledgeArticles",
+        component: KnowledgeArticlesView,
+      },
+      {
+        path: "KnowledgeArticle/:id",
+        name: "KnowledgeArticle/:id",
+        component: KnowledgeArticleView,
+        meta: {
+          breadcrumb: [
+            {
+              name: "首頁",
+              enName: "Home",
+              link: "/",
+            },
+            {
+              name: "3C小知識",
+              enName: "3cArticles",
+              link: "/KnowledgeArticles",
+            },
+          ],
+        },
+      },
+      {
+        path: "KolArticles",
+        name: "KolArticles",
+        component: KolArticlesView,
+      },
+      {
+        path: "KolArticle/:id",
+        name: "KolArticle/:id",
+        component: KolArticleView,
+        meta: {
+          breadcrumb: [
+            {
+              name: "首頁",
+              enName: "Home",
+              link: "/",
+            },
+            {
+              name: "KOL推薦",
+              enName: "KolArticles",
+              link: "/KolArticles",
+            },
+          ],
+        },
       },
     ]
   },
@@ -55,8 +160,7 @@ const routers = [
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
-  routers,
-  routes: routers,
+  routes,
   linkActiveClass: "active",
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
