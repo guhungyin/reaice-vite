@@ -1,6 +1,69 @@
+:root{
+    --color-red: #E40505;
+    --color-pink: #e0afa0;
+    --color-white: #ffffff;
+    --color-black: #484848;
+    --color-grey66: #666666;
+    --color-grey9f: #9f9f9f;
+    --color-greyD4: #d4d4d4;
+    --color-greyE9: #e9e9e9;
+    --color-greyF7: #f7f7f7;
+    --color-brown: #AC9E91;
+    --color-brownDeep: #A78667;
+    --color-brownLight: #F1ECE8;
+    --color-brown5f: #997b5f;
+    --color-f1f1f1: #F1F1F1;
+    --color-5C6C75: #5C6C75;
+  }
 body{
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+.nav-link{
+    color: #484848;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link{
+    background-color: var(--color-brown5f);
+}
+.nav-pills i{
+    width: 16px;
+}
+.nav-pills i.category{
+    background: url('../images/category.svg') no-repeat center center / contain;
+}
+.nav-pills i.product{
+    background: url('../images/product.svg') no-repeat center center / contain;
+}
+.nav-pills i.article{
+    background: url('../images/article.svg') no-repeat center center / contain;
+}
+.nav-pills i.user{
+    background: url('../images/user.svg') no-repeat center center / contain;
+}
+
+.nav-pills .nav-link.active i.category{
+    background: url('../images/category_on.svg') no-repeat center center / contain;
+}
+.nav-pills .nav-link.active i.product{
+    background: url('../images/product_on.svg') no-repeat center center / contain;
+}
+.nav-pills .nav-link.active i.article{
+    background: url('../images/article_on.svg') no-repeat center center / contain;
+}
+.nav-pills .nav-link.active i.user{
+    background: url('../images/user_on.svg') no-repeat center center / contain;
+}
+
+.btn-brown5f{
+    color: var(--color-white);
+    background-color: var(--color-brown5f);
+    border-color: var(--color-brown5f);
+}
+.text-grey66{
+    color: var(--color-grey66);
+}
+
+thead{
+    background-color: var(--color-f1f1f1);
+    color: var(--color-5C6C75);
 }

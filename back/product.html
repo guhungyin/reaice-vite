@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首頁</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2 border-end">
+                <nav class="nav flex-column nav-pills">
+                    <h1 class="mt-2">
+                        <img src="./images/logo.svg" alt="" class="img-fluid">
+                    </h1>
+                    <a class="nav-link disabled my-2">產品管理</a>
+                    <a class="nav-link d-flex mb-2" href="./category.html">
+                        <i class="category me-2"></i>
+                        類別
+                    </a>
+                    <a class="nav-link d-flex mb-2 active" href="./product.html">
+                        <i class="product me-2"></i>
+                        產品
+                    </a>
+                    <a class="nav-link disabled my-2">文章管理</a>
+                    <a class="nav-link d-flex mb-2" href="./article.html">
+                        <i class="article me-2"></i>
+                        文章
+                    </a>
+                    <a class="nav-link disabled my-2">使用者管理</a>
+                    <a class="nav-link d-flex mb-2" href="./user.html">
+                        <i class="user me-2"></i>
+                        使用者
+                    </a>
+                </nav>
+            </div>
+            <div class="col-10">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand me-auto fw-bold text-grey66" href="#">產品</a>
+                        <button type="button" class="btn btn-brown5f" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#addModal">新增產品</button>
+                    </nav>
+                    <table class="table table-borderless align-middle mt-3 table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">
+                                <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                            </th>
+                            <th scope="col">圖片</th>
+                            <th scope="col">名稱</th>
+                            <th scope="col">類別</th>
+                            <th scope="col">價格</th>
+                            <th scope="col">優惠價</th>
+                            <th scope="col">數量</th>
+                            <th scope="col">狀態</th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">
+                                <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                            </th>
+                            <td>
+                                <img src="./images/img.png" alt="">
+                            </td>
+                            <td>親膚快充線 USB A TO TYPE C</td>
+                            <td>充電線</td>
+                            <td>600</td>
+                            <td>399</td>
+                            <td>999</td>
+                            <td class="text-success">已上架</td>
+                            <td align="right">
+                                <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#editModal">編輯</button>
+                                <button type="button" class="btn btn-outline-danger ms-2">刪除</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                            </th>
+                            <td>
+                                <img src="./images/img.png" alt="">
+                            </td>
+                            <td>親膚快充線 USB A TO TYPE C</td>
+                            <td>充電線</td>
+                            <td>600</td>
+                            <td>399</td>
+                            <td>999</td>
+                            <td class="text-success">已上架</td>
+                            <td align="right">
+                                <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#editModal">編輯</button>
+                                <button type="button" class="btn btn-outline-danger ms-2">刪除</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                            </th>
+                            <td>
+                                <img src="./images/img.png" alt="">
+                            </td>
+                            <td>親膚快充線 USB A TO TYPE C</td>
+                            <td>充電線</td>
+                            <td>600</td>
+                            <td>399</td>
+                            <td>999</td>
+                            <td class="text-success">已上架</td>
+                            <td align="right">
+                                <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#editModal">編輯</button>
+                                <button type="button" class="btn btn-outline-danger ms-2">刪除</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                            </th>
+                            <td>
+                                <img src="./images/img.png" alt="">
+                            </td>
+                            <td>親膚快充線 USB A TO TYPE C</td>
+                            <td>充電線</td>
+                            <td>600</td>
+                            <td>399</td>
+                            <td>999</td>
+                            <td class="text-success">已上架</td>
+                            <td align="right">
+                                <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#editModal">編輯</button>
+                                <button type="button" class="btn btn-outline-danger ms-2">刪除</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                            </th>
+                            <td>
+                                <img src="./images/img.png" alt="">
+                            </td>
+                            <td>親膚快充線 USB A TO TYPE C</td>
+                            <td>充電線</td>
+                            <td>600</td>
+                            <td>399</td>
+                            <td>999</td>
+                            <td class="text-success">已上架</td>
+                            <td align="right">
+                                <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#editModal">編輯</button>
+                                <button type="button" class="btn btn-outline-danger ms-2">刪除</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                            </th>
+                            <td>
+                                <img src="./images/img.png" alt="">
+                            </td>
+                            <td>親膚快充線 USB A TO TYPE C</td>
+                            <td>充電線</td>
+                            <td>600</td>
+                            <td>399</td>
+                            <td>999</td>
+                            <td class="text-success">已上架</td>
+                            <td align="right">
+                                <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#editModal">編輯</button>
+                                <button type="button" class="btn btn-outline-danger ms-2">刪除</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                            </th>
+                            <td>
+                                <img src="./images/img.png" alt="">
+                            </td>
+                            <td>親膚快充線 USB A TO TYPE C</td>
+                            <td>充電線</td>
+                            <td>600</td>
+                            <td>399</td>
+                            <td>999</td>
+                            <td class="text-success">已上架</td>
+                            <td align="right">
+                                <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#editModal">編輯</button>
+                                <button type="button" class="btn btn-outline-danger ms-2">刪除</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                            </th>
+                            <td>
+                                <img src="./images/img.png" alt="">
+                            </td>
+                            <td>親膚快充線 USB A TO TYPE C</td>
+                            <td>充電線</td>
+                            <td>600</td>
+                            <td>399</td>
+                            <td>999</td>
+                            <td class="text-success">已上架</td>
+                            <td align="right">
+                                <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#editModal">編輯</button>
+                                <button type="button" class="btn btn-outline-danger ms-2">刪除</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                            </th>
+                            <td>
+                                <img src="./images/img.png" alt="">
+                            </td>
+                            <td>親膚快充線 USB A TO TYPE C</td>
+                            <td>充電線</td>
+                            <td>600</td>
+                            <td>399</td>
+                            <td>999</td>
+                            <td class="text-success">已上架</td>
+                            <td align="right">
+                                <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#editModal">編輯</button>
+                                <button type="button" class="btn btn-outline-danger ms-2">刪除</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                            </th>
+                            <td>
+                                <img src="./images/img.png" alt="">
+                            </td>
+                            <td>親膚快充線 USB A TO TYPE C</td>
+                            <td>充電線</td>
+                            <td>600</td>
+                            <td>399</td>
+                            <td>999</td>
+                            <td class="text-danger">未上架</td>
+                            <td align="right">
+                                <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#editModal">編輯</button>
+                                <button type="button" class="btn btn-outline-danger ms-2">刪除</button>
+                            </td>
+                          </tr>
+                        </tbody>
+                    </table>
+                    <section class="d-flex justify-content-between mt-5">
+                        <p class="fs-7">顯示 1 到 10 項目，共 100 個項目</p>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-light text-center py-3">REAICE 後臺管理系統</footer>
+    <!-- 編輯視窗 -->
+    <div class="modal fade" id="editModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="addModalLabel">編輯商品</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <!-- 商品名稱 -->
+                                <div class="row mb-3">
+                                    <p>商品名稱</p>
+                                    <div class="col">
+                                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="請輸入商品名稱" value="親膚快充線 USB A TO TYPE C">
+                                    </div>
+                                    <div class="col-auto">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option value="上架">上架</option>
+                                            <option value="不上架">不上架</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- 類別 -->
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <p>主類別</p>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option value="充電線">充電線</option>
+                                            <option value="充電頭">充電頭</option>
+                                            <option value="直播燈">直播燈</option>
+                                            <option value="耳機">耳機</option>
+                                            <option value="直播燈">直播燈</option>
+                                            <option value="車充">車充</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <p>子類別</p>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option value="USB A to Lightning">USB A to Lightning</option>
+                                            <option value="USB A to Type-C">USB A to Type-C</option>
+                                            <option value="Type-C to Type-C">Type-C to Type-C</option>
+                                            <option value="Type-C to Lightning">Type-C to Lightning</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- 價格 -->
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <p>價格</p>
+                                        <input type="number" class="form-control" id="formGroupExampleInput" value="600">
+                                    </div>
+                                    <div class="col">
+                                        <p>優惠價</p>
+                                        <input type="number" class="form-control" id="formGroupExampleInput" value="399">
+                                    </div>
+                                </div>
+                                <!-- 數量 -->
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <p>數量</p>
+                                        <input type="number" class="form-control" id="formGroupExampleInput" value="50">
+                                    </div>
+                                    <div class="col">
+                                        <p>單位</p>
+                                        <input type="text" class="form-control" id="formGroupExampleInput" value="條">
+                                    </div>
+                                </div>
+                                <!-- 商品內容 -->
+                                <p>商品內容</p>
+                                <textarea class="form-control" placeholder="請輸入商品內容" id="floatingTextarea2" style="height: 300px"></textarea>
+                            </div>
+                            <div class="col-6">
+                                <!-- 商品圖片 -->
+                                <p>商品圖片</p>
+                                <div class="row mb-3">
+                                    <p>主圖片</p>
+                                    <div class="col">
+                                        <input class="form-control" type="file" id="formFile">
+                                    </div>
+                                    <div class="col-auto">
+                                        <button type="button" class="btn btn-outline-danger">刪除</button>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <p>圖片一</p>
+                                    <div class="col">
+                                        <input class="form-control" type="file" id="formFile">
+                                    </div>
+                                    <div class="col-auto">
+                                        <button type="button" class="btn btn-outline-danger">刪除</button>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <p>圖片二</p>
+                                    <div class="col">
+                                        <input class="form-control" type="file" id="formFile">
+                                    </div>
+                                    <div class="col-auto">
+                                        <button type="button" class="btn btn-outline-danger">刪除</button>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <p>圖片三</p>
+                                    <div class="col">
+                                        <input class="form-control" type="file" id="formFile">
+                                    </div>
+                                    <div class="col-auto">
+                                        <button type="button" class="btn btn-outline-danger">刪除</button>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <button type="button" class="btn btn-outline-primary w-100">新增圖片</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">儲存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 新增視窗 -->
+    <div class="modal fade" id="addModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="addModalLabel">新增商品</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <!-- 商品名稱 -->
+                                <div class="row mb-3">
+                                    <p>商品名稱</p>
+                                    <div class="col">
+                                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="請輸入商品名稱" value="">
+                                    </div>
+                                    <div class="col-auto">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option value="1">上架</option>
+                                            <option value="2">不上架</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- 類別 -->
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <p>主類別</p>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option value="充電線">充電線</option>
+                                            <option value="充電頭">充電頭</option>
+                                            <option value="直播燈">直播燈</option>
+                                            <option value="耳機">耳機</option>
+                                            <option value="直播燈">直播燈</option>
+                                            <option value="車充">車充</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <p>子類別</p>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option value="USB A to Lightning">USB A to Lightning</option>
+                                            <option value="USB A to Type-C">USB A to Type-C</option>
+                                            <option value="Type-C to Type-C">Type-C to Type-C</option>
+                                            <option value="Type-C to Lightning">Type-C to Lightning</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- 價格 -->
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <p>價格</p>
+                                        <input type="number" class="form-control" id="formGroupExampleInput" value="">
+                                    </div>
+                                    <div class="col">
+                                        <p>優惠價</p>
+                                        <input type="number" class="form-control" id="formGroupExampleInput" value="">
+                                    </div>
+                                </div>
+                                <!-- 數量 -->
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <p>數量</p>
+                                        <input type="number" class="form-control" id="formGroupExampleInput" value="">
+                                    </div>
+                                    <div class="col">
+                                        <p>單位</p>
+                                        <input type="text" class="form-control" id="formGroupExampleInput" value="">
+                                    </div>
+                                </div>
+                                <!-- 商品內容 -->
+                                <p>商品內容</p>
+                                <textarea class="form-control" placeholder="請輸入商品內容" id="floatingTextarea2" style="height: 300px"></textarea>
+                            </div>
+                            <div class="col-6">
+                                <!-- 商品圖片 -->
+                                <p>商品圖片</p>
+                                <div class="row mb-3">
+                                    <p>主圖片</p>
+                                    <div class="col-10">
+                                        <input class="form-control" type="file" id="formFile">
+                                    </div>
+                                    <div class="col">
+                                        <button type="button" class="btn btn-outline-danger w-100">刪除</button>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <p>圖片一</p>
+                                    <div class="col-10">
+                                        <input class="form-control" type="file" id="formFile">
+                                    </div>
+                                    <div class="col">
+                                        <button type="button" class="btn btn-outline-danger w-100">刪除</button>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <button type="button" class="btn btn-outline-primary w-100">新增圖片</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">儲存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
